@@ -16,6 +16,7 @@
 body{
     font-size: 18px;
     background-color: var(--dark-cyan);
+    overflow: hidden;
 }
 
 .container{
@@ -44,19 +45,35 @@ body{
 }
 
 .container::before{
-    background: url("/images/image-victor.jpg");
-    width: 300px;
-    height: 300px;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    position: relative;
+    content:"";
+    background: url("/images/bg-pattern-bottom.svg") no-repeat
+    center center/cover;
+    width: 400px;
+    height: 400px;
+    top: 300px;
+    left: 125px;
+    position: absolute;
+    z-index: -1;
+    opacity: 1;
 }
 
 .bubble-gradient,
 .text-content{
-    max-width: 100%;
-   
+    max-width: 100%; 
+}
+
+
+.text-content::before{
+    content:"";
+    background: url("/images/image-victor.jpg") no-repeat
+    center center/cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    position: absolute;
+    top: 25%;
+    left: 32%;
 }
 
 .bubble-gradient img{
@@ -77,6 +94,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 25px;
 }
 
 .nameAge p{
