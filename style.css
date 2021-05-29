@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-saturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray:hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    background-color: var(--dark-cyan);
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 20px;
+    width: 90%;
+    margin: 75px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.container::after{
+    content: "";
+    background: url("/images/bg-pattern-top.svg") no-repeat
+    center center/cover;
+    background-color: var(--dark-cyan);
+    opacity: .5;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -75px;
+    left: -175px;
+    z-index: -10;
+}
+
+.container::before{
+    background: url("/images/image-victor.jpg");
+    width: 300px;
+    height: 300px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+.bubble-gradient,
+.text-content{
+    max-width: 100%;
+   
+}
+
+.bubble-gradient img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.person-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 25px;
+    border-bottom: 1px solid var(--dark-grayish-blue);
+}
+
+.nameAge{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nameAge p{
+    margin-left: 30px;
+    color: var(--dark-grayish-blue);
+}
+
+.location{
+    margin-top: 15px;
+}
+
+.location p{
+    color: var(--dark-grayish-blue);
+}
+
+.nameAge h1, 
+.stats h1{
+    font-size: 24px;
+    color: var(--dark-saturated-blue);
+    font-weight: 700;
+}
+
+.person-stats{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5em;
+    width: 100%;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+.stats{
+    text-align: center;
+}
+
+.stats p{
+    font-size:1em;
+    margin-top: 10px;
+    color: var(--dark-grayish-blue);
+}

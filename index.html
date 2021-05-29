@@ -3,33 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name = "author" content = "Karen Simisola Efereyan">
+  <meta name = "description" content = "A simple frontendmentor challenge">
+  <meta name = "keywords" content = "web design, website, frontendmentor">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Profile card component</title>
-
+  <link rel="stylesheet" href="/style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { 
+      font-size: 11px; 
+      text-align: center;
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+        text-decoration: none;
+    }
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
+  <div class="container">
+    <div class="bubble-gradient">
+      <img src="/images/bg-pattern-card.svg" alt="Bubble gradient">
+    </div>
+    <div class="text-content">
+      <div class="person-info">
+        <div class="nameAge">
+          <h1>Victor Crest</h1>
+          <p> 26</p>
+        </div>
+        <div class="location">
+          <p>London</p></div>
+      </div>
 
-  80K
-  Followers
+      <div class="person-stats">
+        <div class="stats">
+          <h1>80K</h1>
+          <p> Followers</p>
+        </div>
 
-  803K
-  Likes
+        <div class="stats">
+          <h1>803K</h1>
+          <p> Likes</p>
+        </div>
 
-  1.4K
-  Photos
+        <div class="stats">
+          <h1>1.4K</h1>
+          <p>Photos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Karen Simisola Efereyan</a>.
   </div>
 </body>
 </html>
