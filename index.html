@@ -3,59 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <meta name = "author" content = "Karen Simisola Efereyan">
-  <meta name = "description" content = "A simple frontendmentor challenge">
-  <meta name = "keywords" content = "web design, website, frontendmentor">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
   <title>Frontend Mentor | Profile card component</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 <body>
+  <main class="wrapper">
+  
 
-  <img src="/images/bg-pattern-top.svg" alt="Top circle" class="top">
-  <img src="/images/bg-pattern-bottom.svg" alt="Bottom circle" class="bottom">
-  <div class="container"> 
-    
-    <div class="bubble-gradient">
-      <img src="/images/bg-pattern-card.svg" alt="Bubble gradient">
+    <div class="card-pattern">
+      <img src="./images/bg-pattern-card.svg" alt="">
     </div>
-    <div class="text-content">
-      <div class="card-profile">
-        <img src="/images/image-victor.jpg" alt="Victor image" class="victor">
-      </div>
+
+    <div class="info">
+      <article>
+        <h1>Victor Crest</h1>
+        <span>26</span>
+      </article>
+      <h4>
+        London
+      </h4>
      
-      <div class="card-info">
-        <div class="nameAge">
-          <h1>Victor Crest</h1>
-          <p> 26</p>
-        </div>
-        <div class="location">
-          <p>London</p></div>
-      </div>
-
-      <div class="person-stats">
-        <div class="stats">
-          <h1>80K</h1>
-          <p> Followers</p>
-        </div>
-
-        <div class="stats">
-          <h1>803K</h1>
-          <p> Likes</p>
-        </div>
-
-        <div class="stats">
-          <h1>1.4K</h1>
-          <p>Photos</p>
-        </div>
-      </div>
     </div>
-  </div>
+
+    <ul class="stats">
+      <li>
+        <h2>
+          80K
+        </h2>
+        <p>
+          Followers
+        </p>
+      </li>
+      <li>
+        <h2>
+          803K
+        </h2>
+        <p>
+          Likes
+        </p>
+      </li>
+      <li>
+        <h2>
+          1.4K
+        </h2>
+        <p>
+          Photos
+        </p>
+      </li>
+    </ul>
+
+    <div class="image"></div>    
+  </main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Karen Simisola Efereyan</a>.
+    Coded by <a href="#">Efereyan Karen</a>.
   </div>
+
+ 
 </body>
 </html>
